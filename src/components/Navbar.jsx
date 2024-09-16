@@ -7,11 +7,13 @@ const Navbar = () => {
       </div>
       <div className="navbar--demoBy">
         <p className="navbar--p">React demo by:</p>
-        <img
-          src="./src/assets/iCeeqSolutionsLogo.png"
-          alt=""
-          className="navbar--icsLogo"
-        />
+        <a className="icsLink" href="https://iceeqsolutions.fi" target="_blank">
+          <img
+            src="../src/assets/iCeeqSolutionsLogo.png"
+            alt="Company logo"
+            className="navbar--icsLogo"
+          />
+        </a>
       </div>
     </nav>
   );

@@ -21,14 +21,20 @@
 
 .navbar--navTitle {
   display: flex;
+  align-items: center;
 }
 
 .navbar--logo {
   height: 50px;
+  background-color: #ffe6ff;
+  border-radius: 25px;
+  border: 2px solid rgb(95, 23, 162);
+  margin: 0 10px 0 30px;
 }
 
 .navbar--demoBy {
   display: flex;
+  align-items: center;
 }
 
 .navbar--p {
@@ -36,5 +42,7 @@
 }
 
 .navbar--icsLogo {
+  padding-top: 7px;
   height: 25px;
+  margin-right: 20px;
 }
