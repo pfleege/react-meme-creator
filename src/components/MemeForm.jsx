@@ -2,16 +2,22 @@ const MemeForm = () => {
   return (
     <form className="memeForm" action="">
       <div className="memeForm--inputFields">
-        <input
-          className="memeForm--textField"
-          type="text"
-          placeholder="Meme heading"
-        />
-        <input
-          className="memeForm--textField"
-          type="text"
-          placeholder="Meme body text"
-        />
+        <label>
+          Your Meme Heading:
+          <input
+            className="memeForm--textField"
+            type="text"
+            placeholder="Meme heading"
+          />
+        </label>
+        <label>
+          Your Meme Body Text:
+          <input
+            className="memeForm--textField"
+            type="text"
+            placeholder="Meme body text"
+          />
+        </label>
       </div>
       <input
         className="memeForm--button"
