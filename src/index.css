@@ -16,7 +16,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(162, 76, 243);
+  height: 100px;
+  background-color: rgb(82, 76, 243);
 }
 
 .navbar--navTitle {
@@ -25,10 +26,11 @@
 }
 
 .navbar--logo {
-  height: 50px;
+  height: 70px;
+  width: auto;
   background-color: #ffe6ff;
   border-radius: 25px;
-  border: 2px solid rgb(95, 23, 162);
+  border: 3px solid rgb(65, 23, 162);
   margin: 0 10px 0 30px;
 }
 
@@ -44,6 +46,7 @@
 .navbar--icsLogo {
   padding-top: 7px;
   height: 25px;
+  width: auto;
   margin-right: 20px;
 }
 
@@ -71,7 +74,7 @@
   border-radius: 7px;
   padding-left: 10px;
   width: 47vw;
-  background-color: rgb(162, 76, 243);
+  background-color: rgb(255, 128, 37);
   color: #fff;
   font-size: 1.2em;
   margin-bottom: 30px;

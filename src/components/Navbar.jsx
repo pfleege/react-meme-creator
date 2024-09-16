@@ -2,7 +2,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar--navTitle">
-        <img className="navbar--logo" src="../src/assets/nav-logo.png" alt="" />
+        <img
+          className="navbar--logo"
+          src="../src/assets/like_a_sir.svg"
+          alt=""
+        />
         <h1>Meme Creator</h1>
       </div>
       <div className="navbar--demoBy">
