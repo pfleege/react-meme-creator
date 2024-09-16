@@ -46,3 +46,33 @@
   height: 25px;
   margin-right: 20px;
 }
+
+.memeForm {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.memeForm--inputFields {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin: 30px 0;
+}
+
+.memeForm--textField {
+  height: 25px;
+  border-radius: 7px;
+  padding-left: 10px;
+  width: 20vw;
+}
+
+.memeForm--button {
+  height: 35px;
+  border-radius: 7px;
+  padding-left: 10px;
+  width: 44vw;
+  background-color: rgb(162, 76, 243);
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
