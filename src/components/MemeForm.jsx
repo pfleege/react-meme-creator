@@ -2,9 +2,18 @@ import { useState } from "react";
 import memeData from "../data/memeData.js";
 
 const MemeForm = () => {
+  const [memeArray, setMemeArray] = useState(memeData.data.memes);
+  const getRandomMeme = () => {
+    const randomIndex = Math.floor(Math.random() * memeArray.length);
+    const url = memeArray[randomIndex].url;
+    console.log(url);
+  };
+  getRandomMeme();
+
   const [formData, setFormData] = useState({
     memeHeading: "",
     memeBody: "",
+    url: "https://i.imgflip.com/gk5el.jpg",
   });
 
   function handleChange(evt) {
