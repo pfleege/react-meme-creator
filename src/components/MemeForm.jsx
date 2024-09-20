@@ -6,9 +6,9 @@ const MemeForm = () => {
   const getRandomMeme = () => {
     const randomIndex = Math.floor(Math.random() * memeArray.length);
     const url = memeArray[randomIndex].url;
-    console.log(url);
+    // console.log(url);
+    return url;
   };
-  getRandomMeme();
 
   const [formData, setFormData] = useState({
     memeHeading: "",
@@ -28,6 +28,14 @@ const MemeForm = () => {
 
   function handleSubmit(evt) {
     evt.preventDefault();
+    const newUrl = getRandomMeme();
+    setFormData((prevState) => {
+      return {
+        ...prevState,
+        url: newUrl,
+      };
+    });
+
     console.log(formData);
   }
 
