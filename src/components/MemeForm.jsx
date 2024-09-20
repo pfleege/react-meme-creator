@@ -32,37 +32,44 @@ const MemeForm = () => {
   }
 
   return (
-    <form className="memeForm" onSubmit={handleSubmit}>
-      <div className="memeForm--inputFields">
-        <label>
-          Your Meme Heading:
-          <input
-            className="memeForm--textField"
-            type="text"
-            name="memeHeading"
-            placeholder="Meme heading"
-            value={formData.memeHeading}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Your Meme Body Text:
-          <input
-            className="memeForm--textField"
-            type="text"
-            name="memeBody"
-            placeholder="Meme body text"
-            value={formData.memeBody}
-            onChange={handleChange}
-          />
-        </label>
+    <>
+      <form className="memeForm" onSubmit={handleSubmit}>
+        <div className="memeForm--inputFields">
+          <label>
+            Your Meme Heading:
+            <input
+              className="memeForm--textField"
+              type="text"
+              name="memeHeading"
+              placeholder="Meme heading"
+              value={formData.memeHeading}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Your Meme Body Text:
+            <input
+              className="memeForm--textField"
+              type="text"
+              name="memeBody"
+              placeholder="Meme body text"
+              value={formData.memeBody}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <input
+          className="memeForm--button"
+          type="submit"
+          value={"Load new meme image"}
+        />
+      </form>
+      <div className="meme">
+        <img src={formData.url} className="meme--image" />
+        <h2 className="meme--text top">{formData.memeHeading}</h2>
+        <h2 className="meme--text bottom">{formData.memeBody}</h2>
       </div>
-      <input
-        className="memeForm--button"
-        type="submit"
-        value={"Load new meme image"}
-      />
-    </form>
+    </>
   );
 };
 
