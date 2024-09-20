@@ -1,4 +1,5 @@
 import { useState } from "react";
+import memeData from "../data/memeData.js";
 
 const MemeForm = () => {
   const [formData, setFormData] = useState({
