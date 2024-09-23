@@ -140,11 +140,11 @@ body {
 }
 
 .bottom {
-  bottom: 60px;
+  bottom: 85px;
 }
 
 .top {
-  top: 0;
+  top: -15px;
 }
 
 .save--button {
