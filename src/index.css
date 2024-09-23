@@ -147,6 +147,17 @@ body {
   top: 0;
 }
 
+.save--button {
+  height: 35px;
+  border-radius: 7px;
+  padding-left: 10px;
+  width: 47vw;
+  background-color: rgb(82, 76, 243);
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 925px) {
   .navbar--navTitle > h1 {
     font-size: 2.5rem;
@@ -189,7 +200,8 @@ body {
   input {
     font-size: 0.9em;
   }
-  .memeForm--button {
+  .memeForm--button,
+  .save--button {
     font-size: 1em;
   }
   .meme--text {
@@ -207,7 +219,8 @@ body {
   input {
     font-size: 0.8em;
   }
-  .memeForm--button {
+  .memeForm--button,
+  .save--button {
     font-size: 0.9em;
   }
   .meme--text {

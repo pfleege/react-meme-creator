@@ -95,7 +95,11 @@ const MemeForm = () => {
           <h2 className="meme--text top">{formData.memeHeading}</h2>
           <h2 className="meme--text bottom">{formData.memeBody}</h2>
         </div>
-        <button type="button" onClick={handleImageDownload}>
+        <button
+          className="save--button"
+          type="button"
+          onClick={handleImageDownload}
+        >
           Save Image
         </button>
       </div>
