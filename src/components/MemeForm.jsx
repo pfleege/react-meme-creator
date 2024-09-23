@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
-// import memeData from "../data/memeData.js";
+import { useEffect, useRef, useState } from "react";
+import * as htmlToImage from "html-to-image";
+import download from "downloadjs";
 
 const MemeForm = () => {
   const [memeArray, setMemeArray] = useState(null);
+  const saveMeme = useRef();
 
   const getRandomMeme = () => {
     const randomIndex = Math.floor(Math.random() * memeArray.length);
@@ -38,6 +40,14 @@ const MemeForm = () => {
     });
 
     // console.log(formData);
+  }
+
+  async function handleImageDownload() {
+    htmlToImage
+      .toPng(document.getElementById("meme--saveMeme"))
+      .then(function (dataUrl) {
+        download(dataUrl, "my-node.png");
+      });
   }
 
   useEffect(() => {
@@ -80,9 +90,14 @@ const MemeForm = () => {
         />
       </form>
       <div className="meme">
-        <img src={formData.url} className="meme--image" />
-        <h2 className="meme--text top">{formData.memeHeading}</h2>
-        <h2 className="meme--text bottom">{formData.memeBody}</h2>
+        <div ref={saveMeme} id="meme--saveMeme">
+          <img src={formData.url} className="meme--image" />
+          <h2 className="meme--text top">{formData.memeHeading}</h2>
+          <h2 className="meme--text bottom">{formData.memeBody}</h2>
+        </div>
+        <button type="button" onClick={handleImageDownload}>
+          Save Image
+        </button>
       </div>
     </>
   );
