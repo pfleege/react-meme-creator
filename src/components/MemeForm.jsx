@@ -14,7 +14,7 @@ const MemeForm = () => {
   const [formData, setFormData] = useState({
     memeHeading: "",
     memeBody: "",
-    url: "https://i.imgflip.com/gk5el.jpg",
+    url: "https://i.imgflip.com/5o32tt.png",
   });
 
   function handleChange(evt) {
@@ -51,7 +51,7 @@ const MemeForm = () => {
       <form className="memeForm" onSubmit={handleSubmit}>
         <div className="memeForm--inputFields">
           <label>
-            Your Meme Heading:
+            Your Heading:
             <input
               className="memeForm--textField"
               type="text"
@@ -62,7 +62,7 @@ const MemeForm = () => {
             />
           </label>
           <label>
-            Your Meme Body Text:
+            Your Body Text:
             <input
               className="memeForm--textField"
               type="text"
