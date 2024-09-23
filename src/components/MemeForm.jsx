@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import memeData from "../data/memeData.js";
 
 const MemeForm = () => {
@@ -36,8 +36,14 @@ const MemeForm = () => {
       };
     });
 
-    console.log(formData);
+    // console.log(formData);
   }
+
+  useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) => res.json())
+      .then((data) => console.log(data.data.memes[0].url));
+  }, []);
 
   return (
     <>
