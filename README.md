@@ -12,7 +12,7 @@ The Meme Generator is a React demo project featuring form elements, data fetchin
 
 ## Demo
 
-👁️ [Live Demo](https://test.com)
+👁️ [Live Demo](https://react-meme-generator.iceeqsolutions.fi/)
 
 ## Built with
 
