@@ -3,7 +3,7 @@
 ![](./src/assets/memeGeneratorImg.png)
 
 <p align="center">
-  Weather Application Demo Page by <a href="https://iceeqsolutions.fi/">iCeeqSolutions</a>
+  Meme Generator by <a href="https://iceeqsolutions.fi/">iCeeqSolutions</a>
 </p>
 
 ## About
